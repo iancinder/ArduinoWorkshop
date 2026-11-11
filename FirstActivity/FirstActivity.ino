@@ -70,7 +70,7 @@ void humanRound() {
   Serial.println();
   Serial.println(F("============ ROUND 1: YOU ============"));
   Serial.println(F("When the L LED lights up, tap your key onto GND as fast as you can."));
-  Serial.println(F("Tap your key once to start."));
+  Serial.println(F("Put your free end into GND once to start."));
   waitForTap();
   delay(500);
 
@@ -202,7 +202,6 @@ void machineRound() {
   Serial.print(F("And it barely varies: all 5 tries were within "));
   Serial.print(slowest - fastest);
   Serial.println(F(" microseconds of each other."));
-  Serial.println(F("Write your numbers on the board!"));
   Serial.println();
   Serial.println(F("To play again: unplug the jumper from pin 12."));
 
