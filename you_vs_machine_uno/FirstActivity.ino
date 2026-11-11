@@ -1,6 +1,5 @@
 /*
-  YOU vs. THE MACHINE  (Arduino Uno)
-  ----------------------------------
+  Makeathon first activity
   Upload this sketch, then open the Serial Monitor at 9600 baud.
 
   WIRING FOR ROUND 1 (you):
@@ -31,7 +30,7 @@ bool keyDown() {
   return digitalRead(KEY_PIN) == LOW;
 }
 
-// Wait until the key has stayed released for 50 ms (ignores contact bounce).
+// Wait until the key has stayed released for 50 ms.
 void waitForRelease() {
   unsigned long t = millis();
   while (millis() - t < 50) {
